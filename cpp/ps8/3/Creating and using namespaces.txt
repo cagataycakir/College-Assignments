@@ -1,0 +1,3 @@
+As the name suggests; namespaces allocate functions, variables or user generated datatypes into confined spaces, calling them through namespace when needed. Firstly, namespaces needed to be defined by an identifier user give them to (or can also be unnamed), then any data they include can be called through the namespace identifier with the operator "::". The best practice is creating them in header files.
+
+Namespaces can be constantly called with "using namespace <identifier>", but this can cause conflicts with the same named variables of different namespaces(especially unnamed namespaces). It is the best practice to call them with :: operator. Or isolate bulk usage with seperate tasks, for example with scopes or implementation files.
